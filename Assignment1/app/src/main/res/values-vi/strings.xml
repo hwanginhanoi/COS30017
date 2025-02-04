@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Điểm leo núi</string>
+    <string name="climb">Leo</string>
+    <string name="fall">Ngã</string>
+    <string name="reset">Đặt lại</string>
+    <string name="score">Điểm: %1$d</string>
+    <string name="score_0">Điểm: 0</string>
+    <string name="enter_player_name">Nhập tên người chơi</string>
+</resources>

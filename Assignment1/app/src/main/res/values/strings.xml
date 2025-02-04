@@ -1,3 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Assignment 1</string>
+    <string name="app_name">Climbing Score</string>
+    <string name="climb">Climb</string>
+    <string name="fall">Fall</string>
+    <string name="reset">Reset</string>
+    <string name="score">Score: %1$d</string>
+    <string name="score_0">Score: 0</string>
+    <string name="enter_player_name">Enter player name</string>
 </resources>
