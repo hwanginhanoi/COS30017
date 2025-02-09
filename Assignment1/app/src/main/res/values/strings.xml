@@ -7,4 +7,8 @@
     <string name="score">Score: %1$d</string>
     <string name="score_0">Score: 0</string>
     <string name="enter_player_name">Enter player name</string>
+    <string name="current_hold_0">Current Hold: 0</string>
+    <string name="current_hold">Current Hold: %1$d</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="max_score_message">%1$s has reached the maximum score!</string>
 </resources>

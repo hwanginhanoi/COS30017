@@ -107,6 +107,14 @@
                         android:layout_marginBottom="16dp"
                         android:text="@string/score_0"
                         android:textSize="24sp" />
+                    <TextView
+                        android:id="@+id/currentHoldTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/current_hold_0"
+                        android:textSize="24sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </RelativeLayout>

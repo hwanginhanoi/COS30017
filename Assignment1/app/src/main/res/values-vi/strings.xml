@@ -7,4 +7,8 @@
     <string name="score">Điểm: %1$d</string>
     <string name="score_0">Điểm: 0</string>
     <string name="enter_player_name">Nhập tên người chơi</string>
+    <string name="current_hold_0">Vị trí: 0</string>
+    <string name="current_hold">Vị trí: %1$d</string>
+    <string name="congratulations">Chúc mừng!</string>
+    <string name="max_score_message">%1$s đã đạt điểm tối đa!</string>
 </resources>

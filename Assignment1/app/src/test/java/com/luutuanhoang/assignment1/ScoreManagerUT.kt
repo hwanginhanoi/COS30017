@@ -101,4 +101,43 @@ class ScoreManagerTest {
         scoreManager.climb()
         assertEquals(1, scoreManager.score)
     }
+
+    @Test
+    fun testClimbIncrementsHold() {
+        // Test that climbing increments the current hold correctly
+        scoreManager.climb()
+        assertEquals(1, scoreManager.currentHold)
+
+        scoreManager.climb()
+        assertEquals(2, scoreManager.currentHold)
+
+        scoreManager.climb()
+        assertEquals(3, scoreManager.currentHold)
+    }
+
+    @Test
+    fun testFallResetsHold() {
+        // Test that falling resets the current hold
+        scoreManager.climb()
+        scoreManager.climb()
+        scoreManager.fall()
+        assertEquals(0, scoreManager.currentHold)
+    }
+
+    @Test
+    fun testResetResetsHold() {
+        // Test that resetting the score manager resets the current hold
+        scoreManager.climb()
+        scoreManager.reset()
+        assertEquals(0, scoreManager.currentHold)
+    }
+
+    @Test
+    fun testMaxHold() {
+        // Test that the current hold does not exceed the maximum value
+        for (i in 1..10) {
+            scoreManager.climb()
+        }
+        assertEquals(9, scoreManager.currentHold)
+    }
 }
