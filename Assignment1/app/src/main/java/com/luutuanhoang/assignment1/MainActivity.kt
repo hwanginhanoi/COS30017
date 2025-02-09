@@ -96,7 +96,7 @@ class MainActivity : AppCompatActivity() {
         val playerNameEditText: EditText = findViewById(R.id.playerNameEditText)
         var playerName = playerNameEditText.text.toString()
         if (playerName.isEmpty()) {
-            playerName = "you"
+            playerName = "You"
         }
         AlertDialog.Builder(this)
             .setTitle("Congratulations!")
