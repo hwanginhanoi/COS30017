@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/itemImageBooking"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/itemDetails"
+        style="@style/MediumSecondaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/totalMoney"
+        style="@style/LargePrimaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Total Money: $0.00"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rate this item:"
+        android:layout_marginBottom="8dp"
+        android:textSize="18sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBarBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stepSize="0.5"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select features:"
+        android:layout_marginBottom="8dp"
+        android:textSize="18sp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/selectedAttributes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:chipSpacingHorizontal="8dp"
+        app:chipSpacingVertical="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Months to borrow:"
+            android:textSize="18sp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/decrementButton"
+            style="@style/PrimaryButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/monthsTextView"
+            style="@style/MediumPrimaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/incrementButton"
+            style="@style/PrimaryButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="+" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveButton"
+        style="@style/PrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Save Booking" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        style="@style/PrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cancel" />
+
+</LinearLayout>
