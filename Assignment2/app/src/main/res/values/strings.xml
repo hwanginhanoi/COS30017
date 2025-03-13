@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Borrow Instrument</string>
+    <string name="item_details_format">%1$s\nRating: %2$.1f\nPrice: %3$d credits/month\n%4$s</string>
+    <string name="total_with_warning">%1$s\nInsufficient funds!</string>
+    <string name="total_normal">%1$s\n </string>
+    <string name="price_format">Price: %d credits/month</string>
+    <string name="price_format_dollars">Price: $%d</string>
+</resources>
